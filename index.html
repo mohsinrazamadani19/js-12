@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+     
+     document.write( num + "<br>"+"<br>")
+     
+     for (var i = 0; i <= num.length; i++){
+      
+       
+       if (num[i] % 2 == 0){
+         document.write(num[i] + "<br>")
+       }
+       
+     }
+     
+     
+     var inpt = +prompt("Enter your num for reverse print")
+     
+     
+     for (var i = 0; i <= inpt; inpt--){
+      
+        document.write("<br>" + inpt)
+       
+     }
+     
+   var input = +prompt("check for prime number ")
+     
+     
+     if (input % 2 != 0){
+       
+       document.write("<br> " + input + "is Prime Number")
+     } else {
+         document.write("<br> " + input + "is Not Prime Number")
+     }
+
+
+
+     document.write('<br> <br>')
+
+     let listintegers = [12, 45, 7, 23, 56, 89, 34, 67, 21];
+
+let maxelement = listintegers[0]
+
+for (var i = 1; i < listintegers.length; i++){
+  
+  if (listintegers[i] > maxelement) {
+    
+    maxelement = listintegers[i]
+    
+  }
+  
+  document.write(maxelement)
+  
+  
+}
+
+
+document.write(maxelement)
+
+document.write('<br> <br>')
+
+
+var palin = ['12321 '];
+var len = palin.length;
+var msg = palin + "it is a palindrome Number "
+
+for (var i = 0; i < len/2; i++){
+  if (palin[i] != palin[len -1 -i]){
+    msg = palin + "it is a palindrome Number"
+  }
+}
+
+document.write(msg)
+
+document.write('<br> <br>')
+
+
+var a = 0, b = 1;
+     
+     for (var i = 0; i <= 10; i++){
+       
+       
+       //.        0.  1
+       var temp = a + b 
+       
+       
+        // 1
+       a = b 
+       
+       //.  1
+       b = temp
+       
+       document.write(temp + '<br>')
+       
+       
+       
+     }
+     document.write('<br> <br>')
+
+
+     var strVovels = prompt("Check Vovel Alphabet Countiing")
+     
+     var vovels = 0;
+     
+     var lowerCasea = strVovels.toLowerCase();
+     
+     for (var i = 0; i < lowerCasea.length; i++) {
+       if 
+       
+       (lowerCasea[i] == 'a' || lowerCasea[i] == 'e' ||         lowerCasea[i] == 'i' || lowerCasea[i] == 'o' ||         lowerCasea[i] == 'u' ) 
+       {
+         
+         vovels++;
+         
+       }
+  
+ 
+     }
+     
+     
+   document.write(`Number of Vosvele in this string ${vovels}`)
+
+   document.write('<br> <br>')
+
+
+   let num = 12345;
+let numStr = num.toString();
+let sum = 0;
+
+for (let i = 0; i < numStr.length; i++) {
+    sum += parseInt(numStr[i]);
+}
+
+console.log("Sum of digits:", sum);
+
+
+    </script>
+    
+</body>
+</html>
